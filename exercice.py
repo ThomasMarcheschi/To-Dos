@@ -25,7 +25,7 @@ def modifier_statut_todo():
     status[choice_todo - 1] = "Fait"
     print("La tâche ",choice_todo,"à été modifiée en Fait")
   elif status[choice_todo - 1] == "Fait" :
-    status[choice_todo - 1] = "A fair"
+    status[choice_todo - 1] = "A faire"
     print("La tâche ",choice_todo,"à été modifiéé en A faire")
  
 # Fonction pour supprimer un todo - à réaliser 
