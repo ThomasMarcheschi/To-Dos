@@ -20,7 +20,13 @@ def creer_todo():
 
 # Fonction pour modifier le statut d'un todo - à réaliser 
 def modifier_statut_todo(): 
-  print('Fonctionnalité "modifier le statut d\'un todo" à venir')
+  choice_todo = int(input("indiquer le numéro de la tache que vous souhaitez modifier :"))
+  if status[choice_todo - 1] == "A faire":
+    status[choice_todo - 1] = "Fait"
+    print("La tâche ",choice_todo,"à été modifiée en Fait")
+  elif status[choice_todo - 1] == "Fait" :
+    status[choice_todo - 1] = "A fair"
+    print("La tâche ",choice_todo,"à été modifiéé en A faire")
  
 # Fonction pour supprimer un todo - à réaliser 
 def supprimer_todo(): 
