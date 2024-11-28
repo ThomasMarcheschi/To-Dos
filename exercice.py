@@ -1,6 +1,16 @@
 # Fonction pour lister les todos - à réaliser 
 def lister_todos():
-  print('Fonctionnalité "lister les todos" à venir')
+  i = 0
+  if list_of_todo == []:
+    print("Votre To-Do liste est vide.")
+  else :
+    print("Vos tâches :")
+    while i < len(list_of_todo):
+      print("- Tache", i+1,":",list_of_todo[i],",",status[i])
+      i = i + 1
+
+list_of_todo = []
+status = []
  
 # Fonction pour créer un todo - à réaliser 
 def creer_todo():
